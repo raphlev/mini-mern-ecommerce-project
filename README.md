@@ -4,7 +4,7 @@ videos: https://www.youtube.com/watch?v=0divhP3pEsg
 
 MongoDB Atlas: https://www.mongodb.com/cloud/atlas
 
-This is also using localstortage to persist the cart items (see localStorage in the redux store and cart actions)
+This is also using localstortage to persist the cart items (see localStorage in the redux store and cart actions), so if going to another browser or tab cart items still visible
 
 ## mongodb/cloud/atlas
 - create Project
