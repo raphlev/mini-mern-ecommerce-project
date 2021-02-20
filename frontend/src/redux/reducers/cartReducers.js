@@ -1,10 +1,10 @@
 import * as actionTypes from "../constants/cartConstants";
 
-const CART_INITIAL_STATE = {
-  cartItems: [],
-};
+//const CART_INITIAL_STATE = {
+//  cartItems: [],
+//};
 
-export const cartReducer = (state = CART_INITIAL_STATE, action) => {
+export const cartReducer = (state = { /* CART_INITIAL_STATE */ cartItems: [],}, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
       const item = action.payload;
