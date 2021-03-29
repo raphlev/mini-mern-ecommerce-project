@@ -11,8 +11,8 @@ This is also using localstortage
 
 ## mongodb/cloud/atlas
 - create Project
-  - react06-mini-mern-ecommerce
-- react06-mini-mern-ecommerce > Build a cluster > shared cluster > AWS > create cluster
+  - react08-mini-mern-ecommerce
+- react08-mini-mern-ecommerce > Build a cluster > shared cluster > AWS > create cluster
 - database access > new database user  -read & write DB
     - react06User / McSqHLBUX38vJ01r
 - network access > IP Whitelist > add IP adress > add current ip adress
