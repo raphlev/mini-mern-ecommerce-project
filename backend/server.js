@@ -2,10 +2,18 @@ require("dotenv").config();
 const express = require("express");
 const productRoutes = require("./routes/productRoutes");
 const connectDB = require("./config/db");
+const cors = require('cors');
 
 connectDB();
 
 const app = express();
+
+const origin = (process.env.NODE_ENV !== 'production')
+  ? 'http://localhost:3000'
+  : 'https://rlu-shop-mern.netlify.app';
+app.use(cors({
+  origin: origin
+}));
 
 app.use(express.json());
 
