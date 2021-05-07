@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: "API running..." });
+  res.json({ message: "API running. Load seed data : node backend/seederScript; try /api/products...; try /api/products:id ..." });
 });
 
 app.use("/api/products", productRoutes);
