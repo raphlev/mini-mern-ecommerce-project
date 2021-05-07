@@ -80,19 +80,19 @@ git add .
 git commit -am "xx"  
 heroku config  
 heroku config:set NODE_ENV=production  
+heroku config:set MONGO_URI=mongodb+srv://react06User:1boUreQICC0A1HhI@cluster0.ompgy.mongodb.net/shop?retryWrites=true&w=majority
 heroku config  
 git push heroku master  
 heroku logs --tail  
 
-
-
-
---> Server URL: https://rlu-shop-mern.herokuapp.com/  
+--> Server URL: https://rlu-shop-mern.herokuapp.com/
 
 ## Deploy client on Netlify
 
-npm i  
-npm run build  
+cd frontend
+npm install
+cd .. 
+npm start --prefix frontend 
 
 Deploy from GIT  
 
