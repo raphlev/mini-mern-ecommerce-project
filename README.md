@@ -89,14 +89,18 @@ heroku logs --tail
 
 ## Deploy client on Netlify
 
-cd frontend
-npm install
-cd .. 
-npm start --prefix frontend 
-
 Deploy from GIT  
 
 Update Site Name to rlu-video-chat 
 Set env variable NODE_ENV=production
 
---> Client running on https://rlu-video-chat.netlify.app/
+Build Settings:
+- Repository: github.com/raphlev/react08-mini-mern-ecommerce-project
+- Base directory: frontend
+- Build command: npm run build
+- Publish directory: frontend/build
+- Deploy log visibility: Logs are public
+- Builds: Active
+
+
+--> Client running on https://rlu-shop-mern.netlify.app/
