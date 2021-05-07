@@ -56,3 +56,47 @@ All the dependencies can be safely updated to the wanted version by using the fo
 npm update  // npm update "xx"
 npx npm-check-updates -u
 npm install
+
+## deploy server heroku  
+'process.env.PORT' will be populated automatically by heroku  
+  
+add Procfile : no web app, only functions (APIs)   
+  worker: node backend/server.js  
+  --> enable heroku to start the app as soon as the application is deployed  
+
+Connect to Heroku and create new App: rlu-shop-mern  
+
+Install the Heroku CLI  
+Download and install the Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli  
+npm install -g heroku  (not recommended method, make sure to use latest release of Node.js)  
+
+
+heroku login 
+heroku config 
+git init  
+heroku git:remote -a rlu-shop-mern  
+heroku config
+git add .  
+git commit -am "xx"  
+heroku config  
+heroku config:set NODE_ENV=production  
+heroku config  
+git push heroku master  
+heroku logs --tail  
+
+
+
+
+--> Server URL: https://rlu-shop-mern.herokuapp.com/  
+
+## Deploy client on Netlify
+
+npm i  
+npm run build  
+
+Deploy from GIT  
+
+Update Site Name to rlu-video-chat 
+Set env variable NODE_ENV=production
+
+--> Client running on https://rlu-video-chat.netlify.app/
