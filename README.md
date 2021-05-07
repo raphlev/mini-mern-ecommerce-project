@@ -104,3 +104,7 @@ Build Settings:
 
 
 --> Client running on https://rlu-shop-mern.netlify.app/
+
+## Improvment
+- add package.json in backend directory and move server dependencies and script into this new file
+- update root package.json > "start": "npm run start --prefix backend",
