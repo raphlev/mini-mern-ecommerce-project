@@ -23,7 +23,7 @@ This is also using localstortage
 root folder create .env:
 
 PORT=5000
-MONGO_URI=mongodb+srv://xxxx
+MONGO_URI=mongodb+srv://react06User:1boUreQICC0A1HhI@cluster0.ompgy.mongodb.net/shop?retryWrites=true&w=majority
 
 # start
 
